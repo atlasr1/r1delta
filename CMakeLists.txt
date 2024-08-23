@@ -8,29 +8,6 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(r1delta SHARED
-    # src/
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/bitbuf.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/client.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/cvar.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dedicated.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dllmain.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/engine.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/factory.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/filecache.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/filesystem.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/keyvalues.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/load.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/logging.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/memory.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/model_info.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/navmesh.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/newbitbuf.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/patcher.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/predictionerror.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/sendmoveclampfix.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/squirrel.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/TableDestroyer.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/utils.cpp
     # include/
     ${CMAKE_CURRENT_SOURCE_DIR}/include/beardbgon.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/bitbuf.h
@@ -62,7 +39,31 @@ add_library(r1delta SHARED
     ${CMAKE_CURRENT_SOURCE_DIR}/include/TableDestroyer.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/tier0_orig.h
     ${CMAKE_CURRENT_SOURCE_DIR}/include/utils.h
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/vector.h)
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/vector.h
+
+    # src/
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/bitbuf.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/client.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/cvar.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dedicated.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/dllmain.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/engine.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/factory.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/filecache.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/filesystem.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/keyvalues.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/load.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/logging.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/memory.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/model_info.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/navmesh.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/newbitbuf.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/patcher.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/predictionerror.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/sendmoveclampfix.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/squirrel.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/TableDestroyer.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/utils.cpp)
 
 # silver-bun
 target_include_directories(r1delta PRIVATE 
