@@ -51,7 +51,7 @@
 #include "core.h"
 #include "load.h"
 #include "MinHook.h"
-#include "thirdparty/silver-bun/silver-bun.h"
+#include "silver-bun.h"
 #pragma intrinsic(_ReturnAddress)
 
 struct PatchInstruction {

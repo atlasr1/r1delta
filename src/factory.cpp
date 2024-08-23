@@ -56,7 +56,7 @@
 #include <map>
 #include "engine.h"
 #include "model_info.h"
-#include "thirdparty/silver-bun/silver-bun.h"
+#include "silver-bun.h"
 
 #pragma comment(lib, "Dbghelp.lib")
 

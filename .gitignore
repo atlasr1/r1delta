@@ -430,6 +430,9 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+# out
+out/*
+
 !tier0_orig.dll
 !tier0_orig.lib
 !libminhook.lib
