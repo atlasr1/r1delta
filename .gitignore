@@ -433,6 +433,9 @@ FodyWeavers.xsd
 # out
 out/*
 
+# would that maybe make it ignore shit generated in minhook?
+thirdparty/minhook/*
+
 !tier0_orig.dll
 !tier0_orig.lib
 !libminhook.lib
