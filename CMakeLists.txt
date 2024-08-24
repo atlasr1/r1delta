@@ -4,7 +4,7 @@ project(
   LANGUAGES CXX C)
 
 add_subdirectory("${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/minhook")
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(r1delta SHARED
@@ -87,6 +87,9 @@ elseif(MINGW) # does mingw even work lmao
         ${CMAKE_CURRENT_SOURCE_DIR}/lib/def/r1delta.def # ?
     )
 endif()
+
+#macros stuff or something
+target_compile_features(r1delta PRIVATE cxx_std_23)
 
 # it sucks but works
 cmake_host_system_information(RESULT out_file_path QUERY WINDOWS_REGISTRY "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Steam App 1454890" VALUE "InstallLocation")
