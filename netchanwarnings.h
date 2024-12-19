@@ -1,8 +1,10 @@
 #pragma once
 #include "engine.h"
 bool InitNetChanWarningHooks();
-struct /*VFT*/ INetMessage
-{
+
+class CNetChan;
+
+struct /*VFT*/ INetMessage {
 	virtual (~INetMessage)();
 	virtual void(SetNetChannel)(void*);
 	virtual void(SetReliable)(bool);
@@ -18,3 +20,5 @@ struct /*VFT*/ INetMessage
 	virtual const char* (ToString)();
 	virtual unsigned int(GetSize)();
 };
+
+bool InitNetChanWarningHooks();
